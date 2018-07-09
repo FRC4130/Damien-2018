@@ -13,10 +13,14 @@ public class RobotMap {
 	public static TalonSRX rightDrive;
 	public static TalonSRX rightFollow;
 	
+	public static TalonSRX elevator;
+	
 	public static PigeonIMU pigeon;
 
 	public static Joystick driver;
 	public static Joystick operator;
+	
+
 	
 	public static void init() {
 		
@@ -30,6 +34,8 @@ public class RobotMap {
 	
 	driver = new Joystick(0);
 	operator = new Joystick(1);
+	
+	elevator = new TalonSRX(5);
 		
 	}
 
